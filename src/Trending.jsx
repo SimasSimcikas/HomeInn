@@ -22,7 +22,7 @@ function Trending() {
     };
 
     useEffect(() => {
-        axios.get('http://localhost:5000/app/items')
+        axios.get('https://homeinn-backend.onrender.com/app/items')
             .then((response) => {
                 setItems(response.data);
                 
@@ -63,7 +63,7 @@ function Trending() {
                         <div className='Trending-items'>
                             {trendingProducts.map((item) => (
                                 <div key={item.ID} className='Trending-item-box'>
-                                        <img src={`http://localhost:5000/${categoryToFolder[item.Subcategory]}/${item.Image_URL}`} alt={item.ItemName} />
+                                        <img src={`https://homeinn-backend.onrender.com/${categoryToFolder[item.Subcategory]}/${item.Image_URL}`} alt={item.ItemName} />
                                     <div className='Trending-items-box-intro'>
                                         <span>{item.ItemName}</span>
                                         <p>${Number(item.Price).toFixed(2)}</p>

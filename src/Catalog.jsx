@@ -29,7 +29,7 @@ function Catalog () {
 
 
 useEffect(() => {
-    axios.get('http://localhost:5000/app/items')
+    axios.get('https://homeinn-backend.onrender.com/app/items')
         .then((response) => {
             console.log("📌 VISI GAUTI PRODUKTAI IŠ SERVERIO:", response.data);
 
@@ -72,7 +72,7 @@ useEffect(() => {
                         <div className='Catalog-items'>
                             {filteredProducts.map((item) => (
                                 <div key={item.ID} className='Catalog-item-box'>
-                                    <img src={`http://localhost:5000/${categoryToFolder[item.Subcategory]}/${item.Image_URL}`} alt={item.ItemName} />
+                                    <img src={`https://homeinn-backend.onrender.com/${categoryToFolder[item.Subcategory]}/${item.Image_URL}`} alt={item.ItemName} />
                                     <div className='Catalog-items-box-intro'>
                                         <span>{item.ItemName}</span>
                                         <p>${Number(item.Price).toFixed(2)}</p>
