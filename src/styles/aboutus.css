@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-section {
+    display: flex;
+    background-color: #5F6F65;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 500px;
+    padding: 60px 100px 60px 100px;
+}
+
+.about-img {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 500px; 
+    overflow: hidden; 
+}
+
+.about-img img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-intro span {
+    color: white;
+    font-weight: 300;
+    font-size: 45px;
+}
+
+.about-intro p {
+    color: white;
+    font-weight: 300;
+}
+
+.about-something {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-something-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-something-box-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-something-box span {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.about-something-box p {
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*---mobile responsive---*/
+
+@media (max-width: 768px) {
+
+    .about-img {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+    }
+
+    .about-something {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-something-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-something-box p {
+        display: flex;
+        text-align: center;
+    }
+
+    .about-something-box-intro {
+        display: flex;
+        align-items: center;
+    }
+
+}

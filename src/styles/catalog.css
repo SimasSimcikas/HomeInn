@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Catalog-section {
+    display: flex; 
+    justify-content: center;
+    background-color: #5F6F65;
+}
+
+.Catalog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 100px 60px 100px;
+    width: 100%;
+    gap: 25px;
+}
+
+.Catalog-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Catalog-intro h1 { 
+    color: white;
+    font-weight: 300;
+    font-size: 45px;
+}
+
+.Catalog-intro p {
+    color: white;
+    font-weight: 300;
+}
+
+.Catalog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #D6BD98;
+    border-radius: 10px;
+    min-height: auto;
+    padding: 20px;
+}
+
+.Catalog-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.Catalog-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Catalog-navbar ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 20px;
+}
+
+.Catalog-navbar li {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: start;
+}
+
+.Catalog-navbar li:hover {
+    cursor: pointer;
+    color: #5F6F65;
+}
+
+.Catalog-navbar button.active li {
+    color: #5F6F65 !important;
+}
+
+button {
+    border: none;
+    background-color: #D6BD98;
+    justify-content: center;
+}
+
+.Catalog-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Catalog-item-box { 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+
+.Catalog-item-box img { 
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
+.Catalog-item-box:hover {
+    cursor: pointer;
+    background-color: #a58d76;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .Catalog-intro {
+        display: flex;
+        text-align: center;
+    }
+
+    .Catalog-navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Catalog-items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

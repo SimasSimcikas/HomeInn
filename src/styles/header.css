@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Inter", serif;
+  margin: 0;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Playwrite AU SA", serif;
+}
+
+.logo {
+  width: 75px;
+}
+
+.header-choice {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.header-links button {
+  text-decoration: none;
+  color: white;
+  background-color: #1A3636;
+  font-size: large;
+}
+
+
+.header-links button:hover {
+  color: #D6BD98;
+  cursor: pointer;
+}
+
+.header-select {
+  display: flex;
+  gap: 30px;
+}
+
+.header-select a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-select a:hover {
+  color: #D6BD98;
+}
+
+#burger {
+  display: none;
+}
+
+/*---mobile responsive---*/
+
+@media (max-width: 768px) {
+
+  .content.header {
+    width: 100%; 
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header-choice {
+    display: flex;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%; 
+  }
+
+  .mobile-select {
+    position: absolute;
+    box-sizing: border-box;
+    top: 6px;
+    left: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .header-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 60px; 
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .header-links.mobile-visible {
+    display: flex;
+    background-color: #1A3636; 
+  }
+
+  .header-select {
+    display: flex;
+    gap: 15px;
+  }
+
+  #burger {
+    display: block;
+  }
+}
+
+
